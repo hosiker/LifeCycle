@@ -8,30 +8,32 @@ class SecondActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_second)
+
+        Log.d("Activity Life cycle","SecondActivity_onCreate")
     }
 
     override fun onStart(){
         super.onStart()
-        Log.d("SecondActivity","SecondActivity_onStart")
+        Log.d("Activity Life cycle","SecondActivity_onStart")
     }
 
     override fun onResume() {
         super.onResume()
-        Log.d("SecondActivity","SecondActivity_onResume")
+        Log.d("Activity Life cycle","SecondActivity_onResume")
     }
 
     override fun onPause() {
         super.onPause()
-        Log.d("SecondActivity","SecondActivity_onPause")
+        Log.d("Activity Life cycle","SecondActivity_onPause")
     }
 
     override fun onStop() {
         super.onStop()
-        Log.d("SecondActivity","SecondActivity_onStop")
+        Log.d("Activity Life cycle","SecondActivity_onStop")
     }
 
     override fun onDestroy() {
         super.onDestroy()
-        Log.d("SecondActivity","SecondActivity_onDestory")
+        Log.d("Activity Life cycle","SecondActivity_onDestory")
     }
 }
